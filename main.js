@@ -2,7 +2,7 @@
 var Jimp = require("jimp");
 
 
-Jimp.read("resize2.png").then(function (image) {
+Jimp.read("unnamed.png").then(function (image) {
     image
     .color([{apply: 'shade', params: [255]}])
     .contrast(1)

@@ -5,12 +5,12 @@ var Jimp = require('jimp');
 //User-Defined Function to read the images
 async function main() {
     const image = await Jimp.read
-('./pokemon.png');
+('./100.png');
 //rotate Function having rotation angle as 99, mode and callback function
-  image.resize(60, 76, Jimp.RESIZE_NEAREST_NEIGHBOR, function(err){
+  image.resize(64, 64, Jimp.RESIZE_NEAREST_NEIGHBOR, function(err){
       if (err) throw err;
   })
-      .write('resize2.png');
+      .write('test.png');
 }
  
 main();
